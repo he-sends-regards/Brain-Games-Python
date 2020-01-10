@@ -6,3 +6,5 @@
 <a href="https://asciinema.org/a/NGLQJnFxyiJKffj3OT3dR7ADP">Asciinema of 5th task</a>
 <br>
 <a href="https://asciinema.org/a/vnEzSOYbPwADPCRXdibjlJPHD">Asciinema of 6th task</a>
+<br>
+<a href="https://asciinema.org/a/yZ7TWtk1fHJbzXnmZqMjiHj3Z">Asciinema of 7th task</a>
