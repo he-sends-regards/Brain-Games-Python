@@ -4,6 +4,9 @@ run:
 configure:
 	poetry install
 
+install:
+	poetry install
+
 publish:
 	poetry build
 	poetry publish
