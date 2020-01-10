@@ -19,7 +19,7 @@ def run():
             for i in range(progression_limit):
                 result.append(result[i] + k)
             return result
-        
+
         progression = make_progression()
         symbol_to_hide = progression[random.randint(0, 9)]
         question = progression.copy()
