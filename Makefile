@@ -3,3 +3,7 @@ run:
 
 install:
 	poetry install
+
+publish:
+	poetry build
+	poetry publish
