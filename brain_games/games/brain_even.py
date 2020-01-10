@@ -7,7 +7,8 @@ def run():
     name = prompt.string('May I have your name? ')
     print('\nHello, {}!'.format(name))
 
-    for i in range(3):
+    rounds_num = 3
+    for i in range(rounds_num):
         num = random.randint(1, 100)
         print('\nQuestion: {}'.format(num))
         correct_answer = 'yes' if num % 2 == 0 else 'no'

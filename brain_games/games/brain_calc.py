@@ -8,7 +8,8 @@ def run():
     name = prompt.string('May I have your name? ')
     print('\nHello, {}!\n'.format(name))
 
-    for i in range(3):
+    rounds_num = 3
+    for i in range(rounds_num):
         num1 = random.randint(0, 10)
         num2 = random.randint(0, 10)
         operations = {
