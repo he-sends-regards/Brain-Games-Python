@@ -1,4 +1,4 @@
-from brain_games.dist.cli import run
+from brain_games.games.cli import run
 
 
 def main():
