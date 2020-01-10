@@ -1,7 +1,7 @@
 run:
 	poetry run brain-games
 
-install:
+configure:
 	poetry install
 
 publish:
