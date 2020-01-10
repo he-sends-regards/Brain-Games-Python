@@ -2,12 +2,7 @@ import prompt
 import random
 
 
-def run():
-    print('Answer "yes" if number even otherwise answer "no".\n')
-    name = prompt.string('May I have your name? ')
-    print('\nHello, {}!'.format(name))
-
-    rounds_num = 3
+def run(rounds_num, name):
     for i in range(rounds_num):
         num = random.randint(1, 100)
         print('\nQuestion: {}'.format(num))

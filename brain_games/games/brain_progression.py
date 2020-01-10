@@ -2,13 +2,7 @@ import prompt
 import random
 
 
-def run():
-    print('Welcome to the Brain Games!')
-    print('What is the result of the expression?\n')
-    name = prompt.string('May I have your name? ')
-    print('\nHello, {}!\n'.format(name))
-
-    rounds_num = 3
+def run(rounds_num, name):
     for i in range(rounds_num):
         def make_progression():
             result = []
