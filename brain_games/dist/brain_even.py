@@ -15,7 +15,8 @@ def run():
         if correct_answer == answer:
             print('Correct!')
         else:
-            print('\n\"{}\" is wrong answer ;(. Correct answer was \"{}\"'.format(answer, correct_answer))
+            result = '\n\"{}\" is wrong answer ;(. Correct answer was \"{}\"'
+            print(result.format(answer, correct_answer))
             print('Let\'s try again, {}'.format(name))
             return
     print('\nCongratulations, {}'.format(name))
