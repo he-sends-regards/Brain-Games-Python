@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "postscriptumno_brain_games"
-version = "0.1.1"
+version = "0.1.2"
 description = ""
 authors = ["postscriptumno <postscriptum.no@gmail.com>"]
 packages = [
@@ -12,6 +12,7 @@ packages = [
 
 [tool.poetry.dependencies]
 python = "^3.8"
+prompt = "^0.4.1"
 
 [tool.poetry.dev-dependencies]
 
