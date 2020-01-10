@@ -7,8 +7,8 @@
 <br>
 <a href="https://asciinema.org/a/vnEzSOYbPwADPCRXdibjlJPHD">Asciinema of 6th task</a>
 <br>
-<a href="https://asciinema.org/a/yZ7TWtk1fHJbzXnmZqMjiHj3Z">Asciinema of 7th task</a>
+<a href="https://asciinema.org/a/O1EeLOxQzH7W5eOGEhnHslYnM">Asciinema of 7th task</a>
 <br>
-<a href="https://asciinema.org/a/2BFiMeP8w6D4PZaNre3ER4pA8">Asciinema of 8th task</a>
+<a href="https://asciinema.org/a/SLEAtksivA5IkTqZl6o8Y0OtE">Asciinema of 8th task</a>
 <br>
-<a href="https://asciinema.org/a/8hoVf43WlKeNY1u1Fr3WRaxvu">Asciinema of 9th task</a>
+<a href="https://asciinema.org/a/ucTcSpzFjqz8oaOfXlh1LFUtg">Asciinema of 9th task</a>
