@@ -1,8 +1,10 @@
 [tool.poetry]
 name = "postscriptumno_brain_games"
-version = "0.1.11"
-description = ""
+version = "0.1.12"
+description = "Brain games project"
 authors = ["postscriptumno <postscriptum.no@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/postscriptumno/python-project-lvl1"
 packages = [
     { include = "brain_games" },
   ]
