@@ -15,14 +15,14 @@ def run(rounds_num, name):
                 return 'yes'
             return 'no'
 
-        correct_answer = is_prime(question)
-        user_answer = prompt.string('Your answer: ')
-        if user_answer == correct_answer:
+        CORRECT_ANSWER = is_prime(question)
+        USER_ANSWER = prompt.string('Your answer: ')
+        if USER_ANSWER == CORRECT_ANSWER:
             print('Correct!')
             continue
         else:
             result = '\"{}\" is wrong answer ;(. Correct answer was \"{}\"'
-            print(result.format(user_answer, correct_answer))
+            print(result.format(USER_ANSWER, CORRECT_ANSWER))
             return
     print('Congratulations, {}'.format(name))
     return

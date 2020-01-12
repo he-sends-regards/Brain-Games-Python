@@ -4,14 +4,14 @@ import random
 
 def run(rounds_num, name):
     for i in range(rounds_num):
-        num1 = random.randint(0, 10)
-        num2 = random.randint(0, 10)
+        NUM1 = random.randint(0, 10)
+        NUM2 = random.randint(0, 10)
         operations = {
-            'sum': '{} + {}'.format(num1, num2),
-            'diff': '{} - {}'.format(num1, num2),
-            'mult': '{} * {}'.format(num1, num2),
+            'sum': '{} + {}'.format(NUM1, NUM2),
+            'diff': '{} - {}'.format(NUM1, NUM2),
+            'mult': '{} * {}'.format(NUM1, NUM2),
         }
-        operation_index = random.randint(1, 4)
+        OPERATION_INDEX = random.randint(1, 4)
 
         def choose_operation(index):
             if index == 1:
@@ -23,23 +23,23 @@ def run(rounds_num, name):
             print('Question: ' + operations['mult'])
             return 'mult'
 
-        operation = choose_operation(operation_index)
+        operation = choose_operation(OPERATION_INDEX)
 
         def find_answer(operation_name):
             if operation_name == 'sum':
-                return num1 + num2
+                return NUM1 + NUM2
             elif operation_name == 'diff':
-                return num1 - num2
-            return num1 * num2
+                return NUM1 - NUM2
+            return NUM1 * NUM2
 
-        correct_answer = find_answer(operation)
-        user_answer = prompt.integer('Your answer: ')
-        if user_answer == correct_answer:
+        CORRECT_ANSWER = find_answer(operation)
+        USER_ANSWER = prompt.integer('Your answer: ')
+        if USER_ANSWER == CORRECT_ANSWER:
             print('Correct!')
             continue
         else:
             result = '\"{}\" is wrong answer ;(. Correct answer was \"{}\"'
-            print(result.format(user_answer, correct_answer))
+            print(result.format(USER_ANSWER, CORRECT_ANSWER))
             return
     print('Congratulations, {}'.format(name))
     return

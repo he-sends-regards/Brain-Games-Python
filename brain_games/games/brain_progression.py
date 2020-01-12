@@ -6,26 +6,26 @@ def run(rounds_num, name):
     for i in range(rounds_num):
         def make_progression():
             result = []
-            progression_limit = 9
-            first_num = random.randint(0, 10)
-            result.append(first_num)
-            k = random.randint(1, 10)
-            for i in range(progression_limit):
-                result.append(result[i] + k)
+            PROGRESSION_LIMIT = 9
+            FIRST_NUM = random.randint(0, 10)
+            result.append(FIRST_NUM)
+            K = random.randint(1, 10)
+            for i in range(PROGRESSION_LIMIT):
+                result.append(result[i] + K)
             return result
 
-        progression = make_progression()
-        symbol_to_hide = progression[random.randint(0, 9)]
-        question = progression.copy()
-        question[question.index(symbol_to_hide)] = '..'
+        PROGRESSION = make_progression()
+        SYMBOL_TO_HIDE = PROGRESSION[random.randint(0, 9)]
+        question = PROGRESSION.copy()
+        question[question.index(SYMBOL_TO_HIDE)] = '..'
         print('Question: {}'.format(question))
-        user_answer = prompt.integer('Your answer: ')
-        if user_answer == symbol_to_hide:
+        USER_ANSWER = prompt.integer('Your answer: ')
+        if USER_ANSWER == SYMBOL_TO_HIDE:
             print('Correct!')
             continue
         else:
             result = '\"{}\" is wrong answer ;(. Correct answer was \"{}\"'
-            print(result.format(user_answer, symbol_to_hide))
+            print(result.format(USER_ANSWER, SYMBOL_TO_HIDE))
             return
     print('Congratulations, {}'.format(name))
     return
