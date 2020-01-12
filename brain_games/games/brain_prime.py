@@ -1,5 +1,6 @@
 import prompt
 import random
+from math import sqrt, ceil
 
 
 def run(rounds_num, name):
@@ -7,15 +8,15 @@ def run(rounds_num, name):
         question = random.randint(1, 100)
         print('Question: {}'.format(question))
 
-        def is_prime(num):
-            if num > 1:
-                for i in range(2, num):
-                    if (num % i) == 0:
-                        return 'no'
-                return 'yes'
-            return 'no'
+        def is_prime_check(num):
+            LIMIT_PRIME_CHECK = ceil(sqrt(num))
+            print(LIMIT_PRIME_CHECK)
+            for i in range(2, LIMIT_PRIME_CHECK):
+                if (num % i) == 0:
+                    return 'no'
+            return 'yes'
 
-        CORRECT_ANSWER = is_prime(question)
+        CORRECT_ANSWER = is_prime_check(question)
         USER_ANSWER = prompt.string('Your answer: ')
         if USER_ANSWER == CORRECT_ANSWER:
             print('Correct!')
