@@ -10,7 +10,6 @@ def run(rounds_num, name):
 
         def is_prime_check(num):
             LIMIT_PRIME_CHECK = ceil(sqrt(num))
-            print(LIMIT_PRIME_CHECK)
             for i in range(2, LIMIT_PRIME_CHECK):
                 if (num % i) == 0:
                     return 'no'
