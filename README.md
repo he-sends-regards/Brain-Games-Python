@@ -3,13 +3,16 @@
 [![Test Coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)](https://codeclimate.com/github/codeclimate/codeclimate/test_coverage)
 [![Build Status](https://travis-ci.org/postscriptumno/python-project-lvl1.svg?branch=master)](https://travis-ci.org/postscriptumno/python-project-lvl1)
 <br>
-[![asciicast](https://asciinema.org/a/0IpYJJNiLNhfxkWPXifMiLqOn.svg)](https://asciinema.org/a/0IpYJJNiLNhfxkWPXifMiLqOn)
-<a href="https://asciinema.org/a/0IpYJJNiLNhfxkWPXifMiLqOn">Asciinema of brain-even</a>
-<br>
-<a href="https://asciinema.org/a/V4jZ3jVuDsRRAs1aTKe16Cn9r">Asciinema of brain-calc</a>
-<br>
-<a href="https://asciinema.org/a/tzao2r7iYk4FiRF9IegEqAxdz">Asciinema of brain-progression</a>
-<br>
-<a href="https://asciinema.org/a/ux7XBaRumylA9DesEMONmdi4t">Asciinema of brain-gcd</a>
-<br>
-<a href="https://asciinema.org/a/LfcVSUR6QOwBvZzuwm3pRkUM5">Asciinema of brain-prime</a>
+
+### Asciinema of brain-calc
+[![asciicast](https://asciinema.org/a/VvtDZHO9z8ynGx9GPpMUNwg0d.svg)](https://asciinema.org/a/VvtDZHO9z8ynGx9GPpMUNwg0d)
+### Asciinema of brain-even
+[![asciicast](https://asciinema.org/a/6tB00XGuE3GB2vmvRi3ciMoCv.svg)](https://asciinema.org/a/6tB00XGuE3GB2vmvRi3ciMoCv)
+### Asciinema of brain-progression
+[![asciicast](https://asciinema.org/a/coGoHADbn4q37KT7aRIoHJDee.svg)](https://asciinema.org/a/coGoHADbn4q37KT7aRIoHJDee)
+### Asciinema of brain-gcd
+[![asciicast](https://asciinema.org/a/6CKFIfS40h4b3IUj6lO9u9Ixn.svg)](https://asciinema.org/a/6CKFIfS40h4b3IUj6lO9u9Ixn)
+### Asciinema of brain-prime
+[![asciicast](https://asciinema.org/a/QCOcSoZ9Zeu9pnCkRcGNmhbpY.svg)](https://asciinema.org/a/QCOcSoZ9Zeu9pnCkRcGNmhbpY)
+### Installing command:
+pip3 install --index-url https://test.pypi.org/simple --extra-index-url https://pypi.org/simple postscriptumno-brain-games
