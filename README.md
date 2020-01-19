@@ -3,6 +3,7 @@
 [![Test Coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)](https://codeclimate.com/github/codeclimate/codeclimate/test_coverage)
 [![Build Status](https://travis-ci.org/postscriptumno/python-project-lvl1.svg?branch=master)](https://travis-ci.org/postscriptumno/python-project-lvl1)
 <br>
+[![asciicast](https://asciinema.org/a/0IpYJJNiLNhfxkWPXifMiLqOn.svg)](https://asciinema.org/a/0IpYJJNiLNhfxkWPXifMiLqOn)
 <a href="https://asciinema.org/a/0IpYJJNiLNhfxkWPXifMiLqOn">Asciinema of brain-even</a>
 <br>
 <a href="https://asciinema.org/a/V4jZ3jVuDsRRAs1aTKe16Cn9r">Asciinema of brain-calc</a>
