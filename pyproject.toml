@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "postscriptumno_brain_games"
-version = "0.1.14"
+version = "0.1.15"
 description = "Brain games project"
 authors = ["postscriptumno <postscriptum.no@gmail.com>"]
 readme = "README.md"
