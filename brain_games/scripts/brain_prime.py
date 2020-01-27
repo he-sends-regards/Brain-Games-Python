@@ -1,14 +1,10 @@
-import prompt
-from brain_games.games.brain_prime import run
+from brain_games import engine
+from brain_games.games import brain_prime
 
 
 def main():
-    print('Welcome to the Brain Games!')
-    print('Answer "yes" if given number is prime. Otherwise answer "no"\n')
-    NAME = prompt.string('May I have your name? ')
-    print('\nHello, {}!\n'.format(NAME))
-    ROUNDS_NUM = 3
-    run(ROUNDS_NUM, NAME)
+    engine.run(brain_prime.DESCRIPTION, brain_prime)
+    return
 
 
 if __name__ == '__main__':

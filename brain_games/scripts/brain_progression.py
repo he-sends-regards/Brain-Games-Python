@@ -1,15 +1,11 @@
-import prompt
-from brain_games.games.brain_progression import run
+from brain_games.games import brain_progression
+from brain_games import engine
 
 
 def main():
-    print('Welcome to the Brain Games!')
-    print('Find missed element of the progression')
-    NAME = prompt.string('May I have your name? ')
-    print('\nHello, {}!\n'.format(NAME))
-    ROUNDS_NUM = 3
-    run(ROUNDS_NUM, NAME)
+    engine.run(brain_progression.DESCRIPTION, brain_progression)
+    return
 
 
-if __name__ == 'main':
+if __name__ == '__main__':
     main()
