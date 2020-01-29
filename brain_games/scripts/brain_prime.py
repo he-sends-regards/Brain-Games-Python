@@ -3,7 +3,7 @@ from brain_games.games import brain_prime
 
 
 def main():
-    engine.run(brain_prime.DESCRIPTION, brain_prime)
+    engine.run(brain_prime)
     return
 
 

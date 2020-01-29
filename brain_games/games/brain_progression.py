@@ -3,29 +3,27 @@ import random
 
 
 DESCRIPTION = 'Find missed element of the progression'
+PROGRESSION_LIMIT = 9
 
-
-def run():
+def make_question():
     def make_progression():
         result = []
-        PROGRESSION_LIMIT = 9
-        FIRST_NUM = random.randint(0, 10)
-        result.append(FIRST_NUM)
-        K = random.randint(1, 10)
+        first_num = random.randint(0, 10)
+        result.append(first_num)
+        k = random.randint(1, 10)
         for i in range(PROGRESSION_LIMIT):
-            result.append(result[i] + K)
+            result.append(result[i] + k)
         return result
 
-    PROGRESSION = make_progression()
-    SYMBOL_TO_HIDE = PROGRESSION[random.randint(0, 9)]
-    question = PROGRESSION.copy()
-    question[question.index(SYMBOL_TO_HIDE)] = '..'
-    print('Question: {}'.format(question))
-    USER_ANSWER = prompt.integer('Your answer: ')
-    if USER_ANSWER == SYMBOL_TO_HIDE:
-        print('Correct!')
-        return True
-    else:
-        result = '\"{}\" is wrong answer ;(. Correct answer was \"{}\"'
-        print(result.format(USER_ANSWER, SYMBOL_TO_HIDE))
-        return False
+    progression = make_progression()
+    index = random.randint(0, 9)
+    symb_to_hide = progression[index]
+    question = progression.copy()
+    question[question.index(symb_to_hide)] = '..'
+
+    print('Question: ' + str(question))
+    return correct_answer(progression, index)
+
+
+def correct_answer(progression, index):
+    return str(progression[index])

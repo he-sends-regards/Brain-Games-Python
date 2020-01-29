@@ -3,7 +3,7 @@ from brain_games import engine
 
 
 def main():
-    engine.run(brain_calc.DESCRIPTION, brain_calc)
+    engine.run(brain_calc)
     return
 
 

@@ -1,17 +1,16 @@
-import prompt
 import random
 
 
 DESCRIPTION = 'What is the result of the expression?'
 
 
-def run():
-    NUM1 = random.randint(0, 10)
-    NUM2 = random.randint(0, 10)
+def make_question():
+    num_1 = random.randint(0, 10)
+    num_2 = random.randint(0, 10)
     operations = {
-        'sum': '{} + {}'.format(NUM1, NUM2),
-        'diff': '{} - {}'.format(NUM1, NUM2),
-        'mult': '{} * {}'.format(NUM1, NUM2),
+        'sum': '{} + {}'.format(num_1, num_2),
+        'diff': '{} - {}'.format(num_1, num_2),
+        'mult': '{} * {}'.format(num_1, num_2),
     }
     OPERATION_INDEX = random.randint(1, 4)
 
@@ -26,20 +25,12 @@ def run():
         return 'mult'
 
     operation = choose_operation(OPERATION_INDEX)
+    return correct_answer(num_1, num_2, operation)
 
-    def find_answer(operation_name):
-        if operation_name == 'sum':
-            return NUM1 + NUM2
-        elif operation_name == 'diff':
-            return NUM1 - NUM2
-        return NUM1 * NUM2
 
-    CORRECT_ANSWER = find_answer(operation)
-    USER_ANSWER = prompt.integer('Your answer: ')
-    if USER_ANSWER == CORRECT_ANSWER:
-        print('Correct!')
-        return True
-    else:
-        result = '\"{}\" is wrong answer ;(. Correct answer was \"{}\"'
-        print(result.format(USER_ANSWER, CORRECT_ANSWER))
-        return False
+def correct_answer(num_1, num_2, operation_name):
+    if operation_name == 'sum':
+        return str(num_1 + num_2)
+    elif operation_name == 'diff':
+        return str(num_1 - num_2)
+    return str(num_1 * num_2)

@@ -3,7 +3,7 @@ from brain_games import engine
 
 
 def main():
-    engine.run(brain_gcd.DESCRIPTION, brain_gcd)
+    engine.run(brain_gcd)
     return
 
 
