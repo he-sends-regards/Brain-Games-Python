@@ -1,9 +1,9 @@
 from brain_games import engine
-from brain_games.games import brain_prime
+from brain_games.games import prime
 
 
 def main():
-    engine.run(brain_prime)
+    engine.run(prime)
     return
 
 
