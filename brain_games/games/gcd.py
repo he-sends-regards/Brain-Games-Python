@@ -1,5 +1,4 @@
 import random
-from math import gcd
 
 
 DESCRIPTION = 'Find greatest common divisor of two numbers'
@@ -11,6 +10,7 @@ def make_question():
     question = '{}, {}'.format(num1, num2)
     answer = str(gcd(num1, num2))
     return question, answer
+
 
 def gcd(num1, num2):
     if not num2:

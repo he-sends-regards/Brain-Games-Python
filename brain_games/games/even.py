@@ -6,10 +6,8 @@ DESCRIPTION = 'Answer "yes" if number even otherwise answer "no".'
 
 def make_question():
     rand_num = random.randint(1, 100)
-    return str(rand_num), correct_answer(rand_num)
+    return str(rand_num), 'yes' if is_even(rand_num) else 'no'
 
 
-def correct_answer(num):
-    if num % 2 == 0:
-        return 'yes'
-    return 'no'
+def is_even(num):
+    return num % 2 == 0
